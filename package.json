@@ -1,0 +1,25 @@
+{
+  "name": "weather-now",
+  "version": "1.0.0",
+  "description": "Web app that gives the weather for cities",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioJss/Weather-now.git"
+  },
+  "author": "Sergio Silva Salas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioJss/Weather-now/issues"
+  },
+  "homepage": "https://github.com/SergioJss/Weather-now#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
