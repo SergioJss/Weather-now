@@ -16,12 +16,13 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 // GEt/
 app.get('/', function(req, res){
-    res.render('home.ejs');
+    res.render('home.ejs', {weather: 'Coming Soon'});
 });
 
 app.post('/', function(req, res){
-    console.log(req.body.city)
-    res.end();
+    let weatherNow = "the weather in " + req.body.city + " is 70 F";
+    let err = false;
+    res.render('home.ejs', {weather: weatherNow, error: err});
 });
 
 app.listen(3000, function(){
